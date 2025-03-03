@@ -516,3 +516,248 @@ Maintaining the access policies - restricting the unauthorized users.
 
 
 ### Tmrw : cloud integration , workflow.
+
+## 05-02-2025 
+
+- ABout the downloading the artifacts and packages. 
+- TMS service is responsible for import and exports of the integration flows.
+
+![alt text](image-45.png)
+
+About the artifacts : it defines integration logic
+
+- iflow : graphical rep of integration process 
+
+- message Mapping : converts data from one format to another format  using predefined functions .
+
+- value Mapping : replaces values dynamically b/w source and target .
+
+- Adapters : prebuilt connectors. 
+
+- API : Supports API exposure  through REST and SOAP protocols.
+
+- data type : defined structured data format .
+
+- Message type : describes the structure of message . 
+
+### Question :
+(Can we modify the artifacts. There will be 2 types They are editable andconfigure-only.)
+
+![alt text](image-46.png)
+
+![alt text](image-47.png)
+(iflow example)
+
+- IDOC or SOAP is the real time considering part. 
+
+
+# 10-02-2025
+
+
+
+(Cloud integration and API management)
+
+## Cloud Integration 
+
+- Different types of Adapters.
+
+Non -SAP Application -> we can publish using HTTPS, SOAP 
+
+![alt text](image-49.png)
+(about the assignmennt of the roles)
+
+![alt text](image-50.png)
+(we check in the instance 2 diff segments of micheal and affrudin) from this we will create the service keys and takes the authorization.
+
+![alt text](image-51.png)
+
+![alt text](image-52.png)
+
+# 11-02-2025 
+
+Solved the problems faced on 10th 
+(written in note )
+
+
+# 12-05-2025 
+
+## PGP Encryptor
+
+![alt text](image-53.png)
+
+![alt text](image-54.png)
+
+![alt text](image-55.png)
+
+# 13-02-2025
+
+doubts on encrypter and decrypter 
+
+(About signatures and algorithms )
+
+
+# 14-02-2025
+
+Message mapping , script collection , routing 
+
+![alt text](image-56.png)
+
+
+exception handling
+
+# 17-02-2025 
+
+about the problems faced on exception handling , explaining the adapters and pallete functions
+
+sevice now and splunk trail account
+
+![alt text](image-57.png)
+
+# 18-02-2025 
+
+# SOAP UI
+
+source and destination can either be sap or non sap
+
+![alt text](image-58.png)
+
+![alt text](image-59.png)
+
+
+Ex: Journal API 
+
+for this there are no REST API's there are few odata APIS but no authorization to post. In this scenario we use SOAP.
+
+![alt text](image-60.png)
+
+# 24 -02 - 2025 
+
+![alt text](image-61.png)
+
+![alt text](image-62.png)
+
+(ODATA with  post operation)
+
+
+![alt text](image-63.png)
+
+3- Q/A
+4- Interview (Mock)
+
+
+
+##  SOAP 
+
+![alt text](image-64.png)
+
+
+Message mapping is used to deal with the custom mapping like XML to WSDL
+
+
+![alt text](image-65.png)
+
+
+URL are only created to HTTPS, SOAP, AS2
+
+
+sandbox only allows apikey
+
+## Sandbox only supports get operations
+
+
+
+Post
+
+![alt text](image-66.png)
+
+![alt text](image-67.png)
+
+
+# 27-02-2025
+
+# Data Stores 
+
+![alt text](image-68.png)
+
+when creating 48 duplicates we can override the file. 
+
+
+![alt text](image-69.png)
+
+![alt text](image-70.png)
+
+
+# 03-03-2025 
+
+## Data Stores 
+
+![alt text](image-72.png)
+
+![alt text](image-73.png)
+
+s4 hana public cloud-->source
+get coupa oauth bearer token--> then get coupa suplier number-->get coupa supplier remittance--->post
+supplier to Coupa--->iflow execution completed.
+get coupa oauth bearer token--> no need of new token everytime
+
+
+![alt text](image-88.png)
+(Write)
+ 
+
+ - Data stores are not recommended for high volume .
+ ## Error Handling 
+
+ error monitoring-->we get a chance to get in emails or IFlow monitoring
+error notification---> in exception handling we have used mail adpter, to notify it.
+or logging to service now, or
+ 
+error handling---> what is the error, what is the route cause, how should i hold the msg for, im i moving to jms.
+
+error reprocess--->a system designed to automatically retry processing data that previously failed due to an error
+
+![alt text](image-74.png)
+
+![alt text](image-75.png)
+
+![alt text](image-76.png)
+sender- s4 hana 
+iflow1 - publisher/ dumps the data
+JMS queue- look ups the msg  
+iflow2- Subscriber 
+
+![alt text](image-78.png)
+
+### The JMS Queues 
+
+![alt text](image-79.png)
+
+
+![alt text](image-81.png)
+
+![alt text](image-82.png)
+(Where used)
+
+
+How to determine no: of  Queues are requird?
+
+
+![alt text](image-83.png)
+
+### Variables which has visibility for particular IFlows
+
+![alt text](image-80.png)
+
+--- 
+
+![alt text](image-84.png)
+
+![alt text](image-85.png)
+
+Both the Iflows are de-coupling . 
+They doesnt depend on each other . 
+
+![alt text](image-86.png)
+
+
+![alt text](image-87.png)
