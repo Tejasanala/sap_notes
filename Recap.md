@@ -24,6 +24,12 @@ Examples of Cloud-Based Applications:
 
 ![alt text](image-92.png)
 
+##  Services 
+
+- All this information is mentioned as a one stop shop. where we can find all the related info
+
+- there r 89 services in BTP
+
 ## SAP BTP Commercial Models :
 
 SAP Business Technology Platform (SAP BTP) offers flexible pricing models to meet different business needs. These models determine how customers consume and pay for SAP BTP services.

@@ -8,7 +8,8 @@
 ![alt text](image-2.png)
 
 
------23-01-2025
+# 23-01-2025
+
 
 
 ## SAP BTP Overview
@@ -761,3 +762,282 @@ They doesnt depend on each other .
 
 
 ![alt text](image-87.png)
+
+## 04-03-2025 
+
+- Data store is not good for heavy payloads, it is only good for small payloads. 
+
+-- Write : 
+
+Visibility is the usage scope .. global means all integration flows can use them 
+
+write-->store the messages
+get--->selecting the particular entry.
+select--> we get all the entries.there is no entry id.
+delete:
+if it is global, directly it will delete.
+
+![alt text](image-94.png)
+
+![alt text](image-95.png)
+
+
+cm-2 
+
+![alt text](image-96.png)
+
+
+
+2 dfferent iflows lo global declare chesi chesina kuda same data store gets effected
+
+
+
+## 07-03-2025 
+
+![alt text](image-97.png)
+![alt text](image-100.png)
+![alt text](image-99.png)
+![alt text](image-98.png)
+
+## 10-3-2025
+
+Fiori, CAP, S4 HANA 
+
+
+
+
+# 11 -03-2025
+
+Stress testing----testing with double its capability
+
+
+
+
+
+
+
+Exploring Business accelarator Hub, Certificate based Authentication,SOAP sender Adapter
+
+Exception handling, Escalation End , SOAP Sender Adapter, Sandbox URL, API's
+
+
+Routing, Exception Handling Process , mail triggering, 
+
+![alt text](image-101.png)
+
+
+# Task 
+
+![alt text](image-102.png)
+
+# 25-03-2025 
+
+- To load 24 sales order data 
+![alt text](image-103.png)
+
+
+# 27-03-2025
+
+## API Management
+
+![alt text](image-104.png)
+
+![alt text](image-105.png)
+
+![alt text](image-106.png)
+
+![alt text](image-107.png)
+![alt text](image-108.png)
+
+
+
+# 8-04-2025
+
+Mulesoft 
+Bhoomi
+
+![alt text](image-109.png)
+1,2 kvm
+3,4 basic AUTH
+
+
+source - basic or oauth
+
+target: client certificate based authentication
+
+
+# SAP Graph 
+
+![alt text](image-110.png)
+
+![alt text](image-111.png)
+
+Encapsulation of all the entities 
+
+![alt text](image-112.png)
+
+
+
+- For the content enricher we need to have a foreignkey value.
+
+
+
+![alt text](image-113.png)
+
+# 1/ 05 / 24 
+## SAML Assertion bearer token policy (OAuth):
+
+- SAML Assertion + bearer token 
+
+![alt text](image-114.png)
+
+
+# 05-05-25
+First we started with what it causes without B2B scenarios . We need to create more IFlows .
+Explored capabilities. 
+
+![alt text](image-122.png)
+![alt text](image-123.png)
+![alt text](image-124.png)
+pm is also know as b2b scenarios.
+components involved are:
+ 
+1. integration advsior
+2. trading partner management(TPM)
+3. sap cloud integration
+4. b2b monitoring
+ 
+# integration advsior
+ 
+for example:
+source is amazon or spencer
+ 
+target is s4 hana public.  
+this source will have one message implementation guideline
+ 
+this target will have one message implementation guideline
+ 
+we will have one mag to map this source and target.
+ 
+generally sap message implementation is on odata or soap.
+source is edi, edi factor x12.
+ 
+when mag is ccreated, the integration advisor gives that acress diff companies, they are using this mapping---.like proposal.
+ 
+for eg, some juice company are using the sap
+ 
+# trading partner management(TPM)
+ 
+repository to maintain .
+for example:
+ 
+like what is template, agreement, ast url,
+what is my certificate with amazon,
+ 
+UI to maintain all ur partners, all pertner specific agreements, sender, receiver configurations , profile certificates,encryption, decryption.--->configure for each specific partner,
+
+# 06-05-25
+## Trading partner Management
+
+- Trading Partner Management (TPM) in SAP refers to the structured way of managing relationships, data exchange, and integration between a company and its external business partners (e.g., suppliers, customers, logistics providers). TPM is particularly critical in B2B integration, EDI (Electronic Data Interchange), and supply chain collaboration.
+
+![alt text](image-115.png)
+
+![alt text](image-116.png)
+- Their purchase order is our sales order.
+(Example of orange juice)
+buying oranges from store i.e we r raising a purchase order to the shop owner i.e a sales order for him.
+![alt text](image-117.png)
+
+![alt text](image-118.png)
+- (creating a profile for the company)
+
+![alt text](image-119.png)
+
+![alt text](image-120.png)
+
+mag- mapping guide lines 
+Using these 2 MIG's we create the MAG's.
+
+- We will be having 1 Trading partner can have 1 or more Agrement templates. like for 850 - 1 template , 812 -1 Template
+
+![alt text](image-121.png)
+
+What Does "Multiple Trading Partners" Actually Mean?
+In a business and integration context, "trading partners" are external organizations that your company exchanges business documents or data with, usually in an automated and structured way.
+
+So, "multiple trading partners" means your organization is working with many such external entities, each potentially requiring unique configurations.
+
+### Tmrw : trading partner implementation
+
+- openconnectors the payload is only getting 750 lines
+
+## 07-05-25
+
+- Creating a profile 
+
+![alt text](image-125.png)
+
+When there are multiple trading partner . The above iflow shows the flow
+
+
+Step1: AS2 with MDM 
+1b
+communication flow (Receiver)
+
+--- 
+
+
+MIG - they r placed at the source and target.
+MAG - It acts as a mapping
+The format of MIG's: 
+
+![alt text](image-126.png)
+![alt text](image-127.png)
+
+
+The format of MAG's:
+
+![alt text](image-128.png)
+
+![alt text](image-129.png)
+
+
+![alt text](image-130.png)
+
+
+### Identifiers in TPM 
+
+In TPM (Trading Partner Management) within SAP Cloud Integration (CPI), identifiers are key elements used to uniquely recognize and differentiate trading partners, agreements, and components during message processing.
+
+
+# 09-05-25
+
+## Integration Adivisor 
+
+![alt text](image-131.png)
+
+
+way1 : Converting the X12 into XML which is sent by walmart and sending it S4 HANA.
+
+way2: We have an intermediate guy deals With EDI
+
+
+## mig
+
+(It is similar as source and target while posting the data)
+
+![alt text](image-132.png)
+
+- We will be having a specific file format.
+- 1.1 means that is  mandatory.
+- if we dont wanna consider we simply uncheck
+- qualified duplicates - it is a duplicate but it is a valid transaction or record
+
+![alt text](image-133.png)
+![alt text](image-134.png)
+
+We can import MIG's in our required format. 
+(EX: our source could be s4hana or any other similar to target. we will be connecting through adapters like AS12 or SOAP)
+
+![alt text](image-135.png)
